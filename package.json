@@ -1,0 +1,23 @@
+{
+    "name": "@jagdish-1999/socket-contracts",
+    "version": "1.0.24",
+    "main": "./.dist/index.js",
+    "types": "./.dist/index.d.ts",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
+    "scripts": {
+        "build": "tsc"
+    },
+    "keywords": [],
+    "author": "Jagdish Chandra",
+    "license": "ISC",
+    "description": "socket-contracts for event data types.",
+    "devDependencies": {
+        "@types/node": "^24.0.3",
+        "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "socket.io": "^4.8.1"
+    }
+}
