@@ -7,7 +7,7 @@ export interface ClientToServerEventMap {
     userList: ClientToServerCallback<UserListPayload, User[]>;
     chatList: ClientToServerCallback<ChatListPayload, Chat[]>;
     sendChat: ClientToServerCallback<SendChatPayload, Chat | null>;
-    deleteChat: ClientToServerCallback<{ id: string; isCurrentUser: boolean },Chat>;
+    deleteChat: ClientToServerCallback<{ id: string; isCurrentUser: boolean }, Chat>;
     joinRoom: ClientToServerCallback<{ roomId: string }, boolean>;
 }
 
