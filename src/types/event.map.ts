@@ -13,5 +13,6 @@ export interface ClientToServerEventMap {
 
 export interface ServerToClientEventMap {
     chatReceived: ServerToClientCallback<Chat | null, boolean>;
+    deletedChat: ServerToClientCallback<Chat | null, boolean>
     roomJoined: ServerToClientCallback<{ roomId: string; userId: string }, boolean>;
 }
