@@ -18,4 +18,5 @@ export interface SendChatPayload {
 export interface ChatListPayload {
     senderId: string;
     receiverId: string;
+    isCurrentUser: boolean;
 }
