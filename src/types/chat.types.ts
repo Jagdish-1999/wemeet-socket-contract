@@ -5,6 +5,7 @@ export interface Chat {
     message: string;
     createdAt: Date;
     updatedAt: Date;
+    deletedFrom: string[]
 }
 
 export interface SendChatPayload {
@@ -18,5 +19,4 @@ export interface SendChatPayload {
 export interface ChatListPayload {
     senderId: string;
     receiverId: string;
-    isCurrentUser: boolean;
 }
